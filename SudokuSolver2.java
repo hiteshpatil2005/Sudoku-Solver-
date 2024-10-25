@@ -315,6 +315,12 @@ public class SudokuSolver2
     public static void main(String[] args) 
     {
             Scanner s = new Scanner(System.in);
+            
+            int repeat;
+
+         do
+         {
+
 
             System.out.print("\n1.4x4 Sudoku\n2.6x6 Sudoku\n3.9x9 Sudoku\n\nEnter your choice: ");
             int choice = s.nextInt();
@@ -395,6 +401,8 @@ public class SudokuSolver2
                           }
                           break;       
             }
-            s.close();
+           System.out.print("\nEnter (1)Continue (0)Exit : ");
+           repeat=s.nextInt();
+         }while(repeat!=0);  
         }
     }
